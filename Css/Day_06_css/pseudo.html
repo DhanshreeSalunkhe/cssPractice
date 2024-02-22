@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        height: 400px;
+        width: 1000px;
+        background-color: cadetblue;
+    
+    }
+    .box::before{
+        height: 120px;
+        width: 120px;
+        background-color: blueviolet;
+        content: 'utkarsh';
+        display: block;
+    }
+    .box::after{
+        height: 120px;
+        width: 120px;
+        background-color: rgb(43, 226, 113);
+        content: 'Aman';
+        display: block;
+    }
+    .box:hover::after{
+        background-color: burlywood;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        I am a Box
+    </div>
+</body>
+</html>

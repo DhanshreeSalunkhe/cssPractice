@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform and Animation</title>
+   <style>
+     .box{
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+        color: beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(200px);
+     }
+     .side_bar{
+        background-color: burlywood;
+        width: 400px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translate(100%);
+
+     }
+     header{
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+     }
+     .sidebar_icon{
+        padding: 20px;
+        background-color: cadetblue;
+    
+     }
+     .sidebar_icon:hover .side_bar{
+          transform: translate(0px);
+     }
+   </style>
+</head>
+<body>
+    <header>
+    <h1> Transform N Animation</h1>
+    <div class="sidebar_icon">
+         Menu
+         <aside class="side_bar">
+
+            <ul>
+                <li> Home </li>
+                <li> About </li>
+            </ul>
+    
+        </aside>
+    </div>
+</header>
+    <div class="box">  I am Box  </div>
+     
+   
+</body>
+</html>

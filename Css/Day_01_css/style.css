@@ -1,0 +1,18 @@
+.box ul li{
+    color: red;
+    margin-bottom: 10px;
+}
+
+.container > p{
+    color: blueviolet;
+}
+p + b{
+    color: yellow;
+}
+
+input[type="number"]{
+    color: blue;
+}
+div p:first-child{
+    color: coral;
+}

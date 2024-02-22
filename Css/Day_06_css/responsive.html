@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport</title>
+
+    <style>
+        .vw{
+            width: 100vw;
+            background-color: chartreuse;
+        }
+        .vh{
+        height: 100vh;
+        background-color: blueviolet;
+        }
+       
+        @media (min-width:600px){
+            .vw{
+                background-color: brown;
+            }
+        }
+        @media (min-width:768px){
+            .vw{
+                background-color: rgb(42, 165, 134);
+            }
+        }
+        @media (min-width:992px){
+            .vw{
+                background-color: rgb(51, 24, 112);
+            }
+        }
+        @media (min-width:1200px){
+            .vw{
+                background-color: rgb(165, 42, 144);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Viewport vw nd vh
+    </h1>
+
+    <div class="vw">
+        VW
+    </div>
+    <div class="vh">
+        VH
+    </div>
+</body>
+</html>
